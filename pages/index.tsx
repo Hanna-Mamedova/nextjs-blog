@@ -5,6 +5,7 @@ import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
 import { GetStaticProps } from 'next';
+import Switcher from '../components/mode-switcher';
 
 type PostData = {
   id: string;
@@ -31,6 +32,7 @@ export default function Home({ allPostsData }: HomeProps) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+        <Switcher/>
       <section className={utilStyles.headingMd}>
         <p className='font-condensed p-3.5'>[Your Self Introduction]</p>
         <p>
@@ -38,8 +40,8 @@ export default function Home({ allPostsData }: HomeProps) {
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} bg-light-blue`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} dark:bg-dark-blue bg-light-blue`}>
+        <h2 className={`${utilStyles.headingLg} dark:text-dark-red`}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>

@@ -1,6 +1,6 @@
 module.exports = {
     content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-    darkMode: false,
+    darkMode: 'class',
     theme: {
         colors: {
             'blue': '#1DA1F2',
