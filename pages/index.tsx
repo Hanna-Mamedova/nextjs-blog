@@ -34,7 +34,7 @@ export default function Home({ allPostsData }: HomeProps) {
       </Head>
         <Switcher/>
       <section className={utilStyles.headingMd}>
-        <p className='font-condensed p-3.5'>[Your Self Introduction]</p>
+        <p className='font-condensed p-3.5 translate-50'>[Your Self Introduction]</p>
         <p>
           (This is a sample website - you will be building a site like this on{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)

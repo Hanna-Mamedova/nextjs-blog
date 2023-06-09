@@ -18,6 +18,27 @@
   font-display: swap;
 }
 
+@layer utilities {
+  .translate-50 {
+    --tw-translate-x: -50%;
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y));
+  }
+}
+
+@layer components {
+  .body {
+    font-family: var(--open-sans) !important;
+    font-size: 0.875rem !important;
+    font-weight: 400 !important;
+    line-height: 150% !important;
+  }
+  .paragraph {
+    color: #0070f3;
+    font-style: italic;
+  }
+}
+
 html,
 body {
   padding: 0;
